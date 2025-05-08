@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<title></title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<div dice="dice-container">
+		<button id="roll-btn">Roll Dice</button>
+		<div id="dice-container"></div>
+		<script src="script.js"></script>
+	</div>
+    <div class="container">
+		<div class="board">
+			<div class="path-to-victory-green">
+				<div class="square path green"></div>
+				<div class="square path green"></div>
+				<div class="square path green"></div>
+				<div class="square path green"></div>
+				<div class="square path green"></div>
+				<div class="square path green"></div>
+				<div class="square path"></div>
+			</div>
+        <div class="player-home player-home-green"> 
+		<div class="square path"id="cell_1"></div>
+		<div class="square path"id="cell_2"></div>
+		<div class="square path stop"id="cell_3"></div>
+		<div class="square path"id="cell_4"></div>
+		<div class="square path"id="cell_5"></div>
+		<div class="square path"id="cell_6"></div>
+		<div class="diagonal-split"id="cell_7"></div>
+		  <div class="home">
+			<div class="hori-boundry"id="home_edge_1"></div>
+			<div class="vertical-boundry"id="home_edge_2"></div>
+			<div class="token-stand token-stand1"id="ts3">
+				<div class="circle"></div>
+			</div>
+		    <div class="token-stand token-stand2"id="ts4">
+			    <div class="circle"></div>
+		    </div>
+		    <div class="vertical-boundry"id="home_edge_5"></div>
+		    <div class="token-stand token-stand3"id="ts6">
+			    <div class="circle"></div>
+		    </div>
+		    <div class="token-stand token-stand4"id="ts7">
+			    <div class="circle"></div>
+		    </div>
+		    <div class="hori-boundry"id="home_edge_8"></div> 
+		  </div>
+		<div class="square path"id="cell_8"> </div>
+		<div class="square path"id="cell_9"></div>
+		<div class="square path"id="cell_10"></div>
+		<div class="square path"id="cell_11"></div>
+		<div class="square path home_stop"id="cell_12"></div>
+		<div class="square path"id="cell_13"></div>
+		</div>
+
+		<div class="path-to-victory-blue">
+			<div class="square path"></div>
+			<div class="square path blue"></div>
+			<div class="square path blue"></div>
+			<div class="square path blue"></div>
+			<div class="square path blue"></div>
+			<div class="square path blue"></div>
+			<div class="square path blue"></div>
+		</div>
+		<div class="player-home player-home-blue"> 
+			<div class="square path"id="cell_1"></div>
+			<div class="square path"id="cell_2"></div>
+			<div class="square path stop"id="cell_3"></div>
+			<div class="square path"id="cell_4"></div>
+			<div class="square path"id="cell_5"></div>
+			<div class="square path"id="cell_6"></div>
+			<div class="diagonal-split"id="cell_7"></div>
+			  <div class="home">
+				<div class="hori-boundry blue"id="home_edge_1"></div>
+				<div class="vertical-boundry blue"id="home_edge_2"></div>
+				<div class="token-stand token-stand1"id="ts3">
+					<div class="circle blue"></div>
+				</div>
+				<div class="token-stand token-stand2"id="ts4">
+					<div class="circle blue"></div>
+				</div>
+				<div class="vertical-boundry blue"id="home_edge_5"></div>
+				<div class="token-stand token-stand3"id="ts6">
+					<div class="circle blue"></div>
+				</div>
+				<div class="token-stand token-stand4"id="ts7">
+					<div class="circle blue"></div>
+				</div>
+				<div class="hori-boundry blue"id="home_edge_8"></div> 
+			  </div>
+			<div class="square path"id="cell_8"> </div>
+			<div class="square path"id="cell_9"></div>
+			<div class="square path"id="cell_10"></div>
+			<div class="square path"id="cell_11"></div>
+			<div class="square path home_stop blue"id="cell_12"></div>
+			<div class="square path"id="cell_13"></div>
+	
+		</div> 
+		<div class="path-to-victory-red">
+			<div class="square path"></div>
+			<div class="square path red"></div>
+			<div class="square path red"></div>
+			<div class="square path red"></div>
+			<div class="square path red"></div>
+			<div class="square path red"></div>
+			<div class="square path red"></div>
+		</div>
+		<div class="player-home player-home-red"> 
+			<div class="square path"id="cell_1"></div>
+			<div class="square path"id="cell_2"></div>
+			<div class="square path stop"id="cell_3"></div>
+			<div class="square path"id="cell_4"></div>
+			<div class="square path"id="cell_5"></div>
+			<div class="square path"id="cell_6"></div>
+			<div class="diagonal-split"id="cell_7"></div>
+			  <div class="home">
+				<div class="hori-boundry red"id="home_edge_1"></div>
+				<div class="vertical-boundry red"id="home_edge_2"></div>
+				<div class="token-stand token-stand1"id="ts3">
+					<div class="circle red"></div>
+				</div>
+				<div class="token-stand token-stand2"id="ts4">
+					<div class="circle red"></div>
+				</div>
+				<div class="vertical-boundry red"id="home_edge_5"></div>
+				<div class="token-stand token-stand3"id="ts6">
+					<div class="circle red"></div>
+				</div>
+				<div class="token-stand token-stand4"id="ts7">
+					<div class="circle red"></div>
+				</div>
+				<div class="hori-boundry red"id="home_edge_8"></div> 
+			  </div>
+			<div class="square path"id="cell_8"> </div>
+			<div class="square path"id="cell_9"></div>
+			<div class="square path"id="cell_10"></div>
+			<div class="square path"id="cell_11"></div>
+			<div class="square path home_stop red"id="cell_12"></div>
+			<div class="square path"id="cell_13"></div>
+	
+		</div> 
+
+		<div class="path-to-victory-yellow">
+			<div class="square path yellow"></div>
+			<div class="square path yellow"></div>
+			<div class="square path yellow"></div>
+			<div class="square path yellow"></div>
+			<div class="square path yellow"></div>
+			<div class="square path yellow"></div>
+			<div class="square path"></div>
+		</div>
+		<div class="player-home player-home-yellow"> 
+			<div class="square path"id="cell_1"></div>
+			<div class="square path"id="cell_2"></div>
+			<div class="square path stop"id="cell_3"></div>
+			<div class="square path"id="cell_4"></div>
+			<div class="square path"id="cell_5"></div>
+			<div class="square path"id="cell_6"></div>
+			<div class="diagonal-split"id="cell_7"></div>
+			  <div class="home">
+				<div class="hori-boundry yellow"id="home_edge_1"></div>
+				<div class="vertical-boundry yellow"id="home_edge_2"></div>
+				<div class="token-stand token-stand1"id="ts3">
+					<div class="circle yellow"></div>
+				</div>
+				<div class="token-stand token-stand2"id="ts4">
+					<div class="circle yellow"></div>
+				</div>
+				<div class="vertical-boundry yellow"id="home_edge_5"></div>
+				<div class="token-stand token-stand3"id="ts6">
+					<div class="circle yellow"></div>
+				</div>
+				<div class="token-stand token-stand4"id="ts7">
+					<div class="circle yellow"></div>
+				</div>
+				<div class="hori-boundry yellow"id="home_edge_8"></div> 
+			  </div>
+			<div class="square path"id="cell_8"> </div>
+			<div class="square path"id="cell_9"></div>
+			<div class="square path"id="cell_10"></div>
+			<div class="square path"id="cell_11"></div>
+			<div class="square path home_stop yellow"id="cell_12"></div>
+			<div class="square path"id="cell_13"></div>
+		</div> 
+    </div>
+	<script src="dice.js"></script>
+</body>
+</html>
